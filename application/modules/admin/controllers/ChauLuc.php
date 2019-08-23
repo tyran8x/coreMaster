@@ -20,7 +20,7 @@ class ChauLuc extends Admin_Controller {
 
 		$crud->display_as('ma','Mã');
         $crud->display_as('tentiengviet','Tên tiếng việt');
-        $crud->display_as('tentienganh','Tên tiếng anh424');
+        $crud->display_as('tentienganh','Tên tiếng anh442124');
 
         
 
