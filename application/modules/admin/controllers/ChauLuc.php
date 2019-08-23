@@ -13,11 +13,16 @@ class ChauLuc extends Admin_Controller {
 	public function index()
 	{
 		$crud = $this->generate_crud('chauluc');
+
 		$crud->set_subject('Châu lục');
+
 		$crud->columns('ma', 'tentiengviet', 'tentienganh');
+
 		$crud->display_as('ma','Mã');
         $crud->display_as('tentiengviet','Tên tiếng việt');
-        $crud->display_as('tentienganh','Tên tiếng anh');
+        $crud->display_as('tentienganh','Tên tiếng anh424');
+
+        
 
 		$this->mPageTitle = 'Châu lục';
 		$this->render_crud();
