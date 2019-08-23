@@ -1,0 +1,34 @@
+{
+  "name": "ci_bootstrap_3",
+  "version": "0.1.0",
+  "description": "**Latest Build: 2017-03-24**",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waifung0207/ci_bootstrap_3.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "del": "*",
+    "gulp": "^3.9.1",
+    "gulp-changed": "*",
+    "gulp-clean-css": "*",
+    "gulp-concat": "*",
+    "gulp-imagemin": "*",
+    "gulp-notify": "*",
+    "gulp-sass": "*",
+    "gulp-sequence": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-uglify": "*",
+    "gulp-watch": "*",
+    "require-dir": "*"
+  },
+  "bugs": {
+    "url": "https://github.com/waifung0207/ci_bootstrap_3/issues"
+  },
+  "homepage": "https://github.com/waifung0207/ci_bootstrap_3#readme",
+  "main": "gulpfile.js"
+}
