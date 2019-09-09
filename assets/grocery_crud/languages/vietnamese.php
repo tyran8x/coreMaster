@@ -4,7 +4,7 @@
 	$lang['list_actions'] 			= 'Tác vụ';
 	$lang['list_page'] 				= 'Trang';	
 	$lang['list_paging_of'] 		= 'tổng';
-	$lang['list_displaying']		= 'Hiển thị từ {start} tới {end} trong tổng số {results}';
+	$lang['list_displaying']		= 'Hiện thị từ {start} tới {end} trong tổng số {results}';
 	$lang['list_filtered_from']		= '(lọc từ tổng số {total_results} bản ghi)';
 	$lang['list_show_entries']		= 'Hiển thị {paging} bản ghi';
 	$lang['list_no_items']			= 'Không có gì để hiển thị';
@@ -84,13 +84,18 @@
 	$lang['ui_year'] = 'yyyy';
 
 	/* Added in version 1.5.2 */
-	$lang['list_more'] = 'Xem thêm';
+	$lang['list_more'] = 'More';
 
 	/* Added in version 1.5.6 */
-	$lang['list_search_column'] = 'Tìm kiếm {column_name}';
+	$lang['list_search_column'] = 'Search {column_name}';
 
 	/* Added in version 1.5.8 */
 	$lang['alert_delete_multiple'] = 'Are you sure that you want to delete those {items_amount} items?';
 
 	$lang['alert_delete_multiple_one'] = 'Are you sure that you want to delete this 1 item?';
+
+
+
+	/* Added in version 1.6.1 */
+	$lang['list_clone'] = 'Clone';
 

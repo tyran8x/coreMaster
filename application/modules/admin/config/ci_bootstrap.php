@@ -85,15 +85,42 @@ $config['ci_bootstrap'] = array(
 			)
 		),
 		'danhmuc' => array(
-			'name'		=> 'Danh mục',
+			'name'		=> 'Danh mục hệ thống',
 			'url'		=> 'danhmuc',
 			'icon'		=> 'fa fa-cog',
 			'children'  => array(
-				'Châu lục'			=> 'chauluc',
-				'Tỉnh thành'			=> 'tinhthanh',
-				'Create Admin User'		=> 'panel/admin_user_create',
-				'Admin User Groups'		=> 'panel/admin_user_group',
+				'Châu lục'				=> 'danhmuc/chauluc',
+				'Tỉnh thành'			=> 'danhmuc/tinhthanh',
+				'Quận huyện'			=> 'danhmuc/quanhuyen',
+				'Phường xã'				=> 'danhmuc/phuongxa',
 			)
+		),
+		'danhmuctdg' => array(
+			'name'		=> 'Danh mục TDG',
+			'url'		=> 'thamdinhgia',
+			'icon'		=> 'fa fa-cog',
+			'children'  => array(
+				'Mục đích'				=> 'mucdich',
+				'Phương pháp'			=> 'phuongphap',
+				'Nguồn vốn'				=> 'nguonvon',
+				'Loại tài sản'			=> 'loaitaisan',
+			)
+		),
+		'thamdinhgia' => array(
+			'name'		=> 'Thẩm định giá',
+			'url'		=> 'thamdinhgia',
+			'icon'		=> 'fa fa-cog',
+			'children'  => array(
+					'name'		=> 'Danh mục chức năng',
+					'url'		=> 'danhmuc',
+					'icon'		=> 'fa fa-cog',
+					'children'  => array(
+						'Châu lục'				=> 'danhmuc/chauluc',
+						'Tỉnh thành'			=> 'danhmuc/tinhthanh',
+						'Quận huyện'			=> 'danhmuc/quanhuyen',
+						'Phường xã'				=> 'danhmuc/phuongxa',
+					)
+				),
 		),
 		'util' => array(
 			'name'		=> 'Utilities',
