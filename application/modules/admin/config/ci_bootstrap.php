@@ -95,32 +95,23 @@ $config['ci_bootstrap'] = array(
 				'Phường xã'				=> 'danhmuc/phuongxa',
 			)
 		),
-		'danhmuctdg' => array(
-			'name'		=> 'Danh mục TDG',
-			'url'		=> 'thamdinhgia',
-			'icon'		=> 'fa fa-cog',
-			'children'  => array(
-				'Mục đích'				=> 'mucdich',
-				'Phương pháp'			=> 'phuongphap',
-				'Nguồn vốn'				=> 'nguonvon',
-				'Loại tài sản'			=> 'loaitaisan',
-			)
-		),
 		'thamdinhgia' => array(
 			'name'		=> 'Thẩm định giá',
 			'url'		=> 'thamdinhgia',
 			'icon'		=> 'fa fa-cog',
 			'children'  => array(
-					'name'		=> 'Danh mục chức năng',
-					'url'		=> 'danhmuc',
-					'icon'		=> 'fa fa-cog',
-					'children'  => array(
-						'Châu lục'				=> 'danhmuc/chauluc',
-						'Tỉnh thành'			=> 'danhmuc/tinhthanh',
-						'Quận huyện'			=> 'danhmuc/quanhuyen',
-						'Phường xã'				=> 'danhmuc/phuongxa',
-					)
-				),
+				'Mục đích'				=> 'thamdinhgia/mucdich',
+				'Phương pháp'			=> 'thamdinhgia/phuongphap',
+				'Nguồn vốn'				=> 'thamdinhgia/nguonvon',
+				'Loại tài sản'			=> 'thamdinhgia/loaitaisan',
+				'Chức vụ'				=> 'thamdinhgia/chucvu',
+				'Giới tính'				=> 'thamdinhgia/gioitinh',
+				'Tình trạng hợp đồng'	=> 'thamdinhgia/tinhtranghopdong',
+				'Đơn vị thẩm định'		=> 'thamdinhgia/donvithamdinh',
+				'Thẩm định viên'		=> 'thamdinhgia/thamdinhvien',
+				'Tài sản'				=> 'thamdinhgia/taisan',
+				'Hợp đồng'				=> 'thamdinhgia/hopdong',
+			)
 		),
 		'util' => array(
 			'name'		=> 'Utilities',
