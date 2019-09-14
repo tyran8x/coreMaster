@@ -27,6 +27,7 @@ class ThamDinhVien extends Admin_Controller {
 		$crud->display_as('sothe_ngaycap','Ngày cấp');
 		$crud->display_as('chucvus','Chức vụ');
 
+		
 		$crud->set_relation('donvithamdinh_id','tdg_donvithamdinh','ten');
 		$crud->set_relation('gioitinh_id','tdg_dm_gioitinh','ten');
 		$crud->set_relation_n_n('chucvus', 'tdg_thamdinhvien2chucvu', 'tdg_dm_chucvu', 'thamdinhvien_id', 'chucvu_id', 'ten',);

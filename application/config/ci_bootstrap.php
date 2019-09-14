@@ -44,7 +44,8 @@ $config['ci_bootstrap'] = array(
 	'stylesheets' => array(
 		'screen' => array(
 			'assets/dist/frontend/lib.min.css',
-			'assets/dist/frontend/app.min.css'
+			'assets/dist/frontend/app.min.css',
+			'assets/dist/frontend/style.css'
 		)
 	),
 

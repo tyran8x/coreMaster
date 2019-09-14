@@ -17,5 +17,6 @@ class Home extends MY_Controller {
 		$data = (object) $this->Api_key_model->listall();
 		var_dump($data);
 		$this->render('home', 'full_width');
+
 	}
 }

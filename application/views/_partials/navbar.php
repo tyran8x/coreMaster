@@ -1,52 +1,41 @@
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-<div class="container">
-
-	<div class="navbar-header">
-		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-			<span class="sr-only">Toggle navigation</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-		</button>
-		<a class="navbar-brand" href=""><?php echo $site_name; ?></a>
+<div class="bodycontent">
+	<div class="headercontent container-fluid">
+		<div class="container">
+			<div class="leftheader col-md-10 col-lg-10">
+				<img src="../assets/dist/images/logo.png" href="/trang-chu" />
+			</div>
+			<div class="rightheader col-md-2 col-lg-2">
+				<img src="../assets/dist/images/hotline.png" />
+			</div>
+		</div>
 	</div>
-
-	<div class="navbar-collapse collapse">
-
-		<ul class="nav navbar-nav">
-			<?php foreach ($menu as $parent => $parent_params): ?>
-
-				<?php if (empty($parent_params['children'])): ?>
-
-					<?php $active = ($current_uri==$parent_params['url'] || $ctrler==$parent); ?>
-					<li <?php if ($active) echo 'class="active"'; ?>>
-						<a href='<?php echo $parent_params['url']; ?>'>
-							<?php echo $parent_params['name']; ?>
-						</a>
-					</li>
-
-				<?php else: ?>
-
-					<?php $parent_active = ($ctrler==$parent); ?>
-					<li class='dropdown <?php if ($parent_active) echo 'active'; ?>'>
-						<a data-toggle='dropdown' class='dropdown-toggle' href='#'>
-							<?php echo $parent_params['name']; ?> <span class='caret'></span>
-						</a>
-						<ul role='menu' class='dropdown-menu'>
-							<?php foreach ($parent_params['children'] as $name => $url): ?>
-								<li><a href='<?php echo $url; ?>'><?php echo $name; ?></a></li>
-							<?php endforeach; ?>
-						</ul>
-					</li>
-
-				<?php endif; ?>
-
-			<?php endforeach; ?>
-		</ul>
-
-		<?php $this->load->view('_partials/language_switcher'); ?>
-		
+	<div class="navigation container-fluid">
+		<div class="container">
+			<div class="leftnav">
+				<div id="hor_nav">
+					<ul>
+						<li class="active"><a href="/trang-chu"><span>Trang chủ</span></a></li>
+						<li class="hassub"><a href=""><span>Giới thiệu</span></a>
+							<ul>
+								<li><a href=""><span>Về công ty</span></a></li>
+								<li><a href=""><span>Lĩnh vực hoạt động</span></a></li>
+							</ul>
+						</li>
+						<li><a href=""><span>Dịch vụ</span></a></li>
+						<li><a href=""><span>Tin tức</span></a></li>
+						<li><a href="duan"><span>Dự án</span></a></li>
+						<li><a href="nhanluc"><span>Nhân lực</span></a></li>
+						<li><a href="tuyendung"><span>Tuyển dụng</span></a></li>
+						<li><a href="lienhe"><span>Liên hệ</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="rightnav">
+				<div class="searchform">
+					<input type="text" name="search">
+					<a href="" class="btn-search">Tìm kiếm</a>
+				</div>
+			</div>
+		</div>
 	</div>
-
 </div>
-</nav>

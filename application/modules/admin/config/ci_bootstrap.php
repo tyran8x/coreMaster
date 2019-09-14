@@ -113,6 +113,15 @@ $config['ci_bootstrap'] = array(
 				'Hợp đồng'				=> 'thamdinhgia/hopdong',
 			)
 		),
+		'tintuc' => array(
+			'name'		=> 'Tin tức',
+			'url'		=> 'tintuc',
+			'icon'		=> 'fa fa-cog',
+			'children'  => array(
+				'Quản lý tin tức'				=> 'tintuc/quanlytintuc',
+				'Chuyên mục'			=> 'tintuc/chuyenmuc',
+			)
+		),
 		'util' => array(
 			'name'		=> 'Utilities',
 			'url'		=> 'util',
