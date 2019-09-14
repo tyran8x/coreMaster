@@ -23,10 +23,10 @@
 						</li>
 						<li><a href=""><span>Dịch vụ</span></a></li>
 						<li><a href=""><span>Tin tức</span></a></li>
-						<li><a href=""><span>Dự án</span></a></li>
-						<li><a href=""><span>Nhân lực</span></a></li>
-						<li><a href=""><span>Tuyển dụng</span></a></li>
-						<li><a href=""><span>Liên hệ</span></a></li>
+						<li><a href="duan"><span>Dự án</span></a></li>
+						<li><a href="nhanluc"><span>Nhân lực</span></a></li>
+						<li><a href="tuyendung"><span>Tuyển dụng</span></a></li>
+						<li><a href="lienhe"><span>Liên hệ</span></a></li>
 					</ul>
 				</div>
 			</div>

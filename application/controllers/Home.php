@@ -8,6 +8,10 @@ class Home extends MY_Controller {
 
 	public function index()
 	{
-		$this->render('home', 'full_width');
+	//	$this->load->model('Content_model');
+		$data= $this->Content_model->getListAll();
+		echo $data;
+	
+		$this->render('Home', 'full_width');
 	}
 }

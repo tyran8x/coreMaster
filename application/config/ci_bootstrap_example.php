@@ -107,6 +107,26 @@ $config['ci_bootstrap'] = array(
 			'url'		=> '',
 			'icon'		=> 'fa fa-home',
 		),
+		'duan' => array(
+			'name'		=> 'Dự án',
+			'url'		=> '',
+			'icon'		=> 'fa fa-home',
+		),
+		'nhanluc' => array(
+			'name'		=> 'Nhân lực',
+			'url'		=> '',
+			'icon'		=> 'fa fa-home',
+		),
+		'tuyendung' => array(
+			'name'		=> 'Tuyển dụng',
+			'url'		=> '',
+			'icon'		=> 'fa fa-home',
+		),
+		'lienhe' => array(
+			'name'		=> 'Liên hệ',
+			'url'		=> '',
+			'icon'		=> 'fa fa-home',
+		),
 		'auth' => array(
 			'name'		=> 'Auth',
 			'url'		=> 'auth',

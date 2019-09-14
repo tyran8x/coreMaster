@@ -1,4 +1,8 @@
 
+<?php
+//$data= $this->Content_model->getListAll();
+
+?>
 <div class="slidecontent container-fluid">
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		    <!-- Indicators -->
@@ -45,6 +49,11 @@
 		    </a>
   		</div>
 	</div>
+
+	<?php //cho $form1->open(); ?>
+	              <?php //echo $form->bs3_text('Username', 'username'); ?>
+				<?php //echo $form1->close(); ?> 
+
 	<div class="maincontent container-fluid">
 		<div class="container">
 			<div class="leftmain">

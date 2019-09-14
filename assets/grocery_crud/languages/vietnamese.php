@@ -52,8 +52,8 @@
 	/* Added in version 1.2.1 */
 	$lang['set_relation_title']		= 'Select {field_display_as}';	
 	$lang['list_record']			= 'Bản ghi';
-	$lang['form_inactive']			= 'inactive';
-	$lang['form_active']			= 'active';
+	$lang['form_inactive']			= 'Ngừng hoạt động';
+	$lang['form_active']			= 'Hoạt động';
 	
 	/* Added in version 1.2.2 */
 	$lang['form_save_and_go_back']	= 'Lưu và trở lại danh sách';
