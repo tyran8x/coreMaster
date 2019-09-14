@@ -50,10 +50,10 @@
 	$lang['update_error']			= 'Có lỗi khi thay đổi dữ liệu.';
 	
 	/* Added in version 1.2.1 */
-	$lang['set_relation_title']		= 'Select {field_display_as}';	
+	$lang['set_relation_title']		= 'Chọn {field_display_as}';	
 	$lang['list_record']			= 'Bản ghi';
-	$lang['form_inactive']			= 'inactive';
-	$lang['form_active']			= 'active';
+	$lang['form_inactive']			= 'Không hoạt động';
+	$lang['form_active']			= 'Hoạt động';
 	
 	/* Added in version 1.2.2 */
 	$lang['form_save_and_go_back']	= 'Lưu và trở lại danh sách';
@@ -73,7 +73,7 @@
 	/* Added in version 1.3.1 */
 	$lang['list_export'] 	= "Xuất file XLS";
 	$lang['list_print'] 	= "In";
-	$lang['minimize_maximize'] = 'Minimize/Maximize';
+	$lang['minimize_maximize'] = 'Thu nhỏ/Phóng to';
 
 	/* Added in version 1.4 */
 	$lang['list_view'] = 'Chi tiết';
@@ -87,7 +87,7 @@
 	$lang['list_more'] = 'More';
 
 	/* Added in version 1.5.6 */
-	$lang['list_search_column'] = 'Search {column_name}';
+	$lang['list_search_column'] = 'Chọn {column_name}';
 
 	/* Added in version 1.5.8 */
 	$lang['alert_delete_multiple'] = 'Are you sure that you want to delete those {items_amount} items?';
