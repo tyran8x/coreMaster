@@ -122,6 +122,16 @@ $config['ci_bootstrap'] = array(
 				'Chuyên mục'			=> 'tintuc/chuyenmuc',
 			)
 		),
+		'tuyendung' => array(
+			'name'		=> 'Quản lý tuyển dụng',
+			'url'		=> 'tuyendung/quanlytuyendung',
+			'icon'		=> 'fa fa-home',
+		),
+		'gioithieu' => array(
+			'name'		=> 'Giới thiệu',
+			'url'		=> 'gioithieu/gioithieu',
+			'icon'		=> 'fa fa-home',
+		),
 		'util' => array(
 			'name'		=> 'Utilities',
 			'url'		=> 'util',

@@ -1,3 +1,9 @@
+<?php
+ $dataGioiThieu = (object) $this->GioiThieu_model->listall();
+ $nameUrl=$this->router->fetch_class();
+?>
+
+
 <div class="bodycontent">
 	<div class="headercontent container-fluid">
 		<div class="container">
@@ -14,19 +20,24 @@
 			<div class="leftnav">
 				<div id="hor_nav">
 					<ul>
-						<li class="active"><a href="/trang-chu"><span>Trang chủ</span></a></li>
-						<li class="hassub"><a href=""><span>Giới thiệu</span></a>
+						<li class="<?php echo $nameUrl =='home'?'active':'' ?> " ><a href="#"><span>Trang chủ</span></a></li>
+						<li class="hassub <?php echo $nameUrl =='gioithieu'?'active':'' ?> "><a href=""><span>Giới thiệu</span></a>
 							<ul>
-								<li><a href=""><span>Về công ty</span></a></li>
-								<li><a href=""><span>Lĩnh vực hoạt động</span></a></li>
+							<?php
+								foreach ($dataGioiThieu as $key => $value){
+							?>
+								<li><a href="gioithieu?id=<?php echo $value['id'] ?> "><span> <?php echo $value['title'] ?> </span></a></li>
+								<?php
+								}
+								?>
 							</ul>
 						</li>
-						<li><a href=""><span>Dịch vụ</span></a></li>
-						<li><a href=""><span>Tin tức</span></a></li>
-						<li><a href="duan"><span>Dự án</span></a></li>
-						<li><a href="nhanluc"><span>Nhân lực</span></a></li>
-						<li><a href="tuyendung"><span>Tuyển dụng</span></a></li>
-						<li><a href="lienhe"><span>Liên hệ</span></a></li>
+						<li class="<?php echo $nameUrl =='dichvu'?'active':'' ?> "><a href="dichvu"><span>Dịch vụ</span></a></li>
+						<li class="<?php echo $nameUrl =='tintuc'?'active':'' ?> "><a href="tintuc"><span>Tin tức</span></a></li>
+						<li class="<?php echo $nameUrl =='duan'?'active':'' ?> "><a href="duan"><span>Dự án</span></a></li>
+						<li class="<?php echo $nameUrl =='nhanluc'?'active':'' ?> "><a href="nhanluc"><span>Nhân lực</span></a></li>
+						<li class="<?php echo $nameUrl =='tuyendung'?'active':'' ?> "><a href="tuyendung"><span>Tuyển dụng</span></a></li>
+						<li class="<?php echo $nameUrl =='lienhe'?'active':'' ?> "><a href="lienhe"><span>Liên hệ</span></a></li>
 					</ul>
 				</div>
 			</div>

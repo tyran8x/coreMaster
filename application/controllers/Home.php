@@ -1,22 +1,24 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-
+defined('BASEPATH') or exit('No direct script access allowed');
 /**
  * Home page
  */
-class Home extends MY_Controller {
-	function __construct() 
-	{ 
-		parent::__construct(); 
-		$this->load->model('Api_key_model');
-
-	} 
-	public function index()
+class Home extends MY_Controller
+{
+	function __construct()
 	{
-		$data = new stdClass();
-		$data = (object) $this->Api_key_model->listall();
-		var_dump($data);
-		$this->render('home', 'full_width');
+		parent::__construct();
+		$this->load->model('tintuc/Content_model');
+		$this->load->model('gioithieu/GioiThieu_model');
+	}
 
+
+	function index()
+	{
+		//  $data = new stdClass();
+		//	$data = (object) $this->Group_model->listall();
+		//  $data['post'] = (object) $this->Group_model->listall();
+		//	var_dump($data );
+		$this->render('home', 'full_width');
 	}
 }

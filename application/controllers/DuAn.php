@@ -1,10 +1,18 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 /**
  * Home page
  */
-class DuAn extends MY_Controller {
+class DuAn extends MY_Controller
+{
+	function __construct()
+	{
+        parent::__construct();
+        $this->load->model('gioithieu/GioiThieu_model');
+        $this->load->model('tintuc/Content_model');
+	}
+	 
 
 	public function index()
 	{
