@@ -13,7 +13,7 @@
   "license": "MIT",
   "devDependencies": {
     "del": "*",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-changed": "*",
     "gulp-clean-css": "*",
     "gulp-concat": "*",
